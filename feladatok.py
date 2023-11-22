@@ -1,17 +1,13 @@
-elso, masodik, osszeg, kulonbseg, szorzat,hanyados, szovegKiir = 0,0,0,0,0,0.0,""
 
-elso = int(input("Kérem az első számot: "))
-masodik = int(input("Kérem a második számot: "))
+elso, masodik, nagyobbik, szovegKiir= 0,0,0,""
 
-osszeg = elso + masodik
-kulonbseg = elso - masodik
-szorzat = elso * masodik
-hanyados = elso / masodik
+elso = int(input("Kérem az első számot:"))
+masodik = int(input("Kérem a második számot:"))
 
-szovegKiir = f"A számok: {elso}, {masodik}"
-szovegKiir += f"\nÖsszege: {osszeg}"
-szovegKiir += f"\nKülönbsége: {kulonbseg}"
-szovegKiir += f"\nszorzata: {szorzat}"
-szovegKiir += f"\nHányadosa: {hanyados}"
+if elso <= masodik:
+    nagyobbik = masodik
+else:
+    nagyobbik = elso
 
-print(szovegKiir)
+    szovegKiir= f"A nagyobb szám: {nagyobbik}"
+    print(szovegKiir)
