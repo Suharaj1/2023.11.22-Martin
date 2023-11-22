@@ -1,20 +1,20 @@
-elso,masodik,harmadik,legkisebb,szovegKiir = 0,0,0,0,""
+elso,masodik,harmadik,legnagyobb,szovegKiir = 0,0,0,0,""
 
-kisebb = 0
+nagyobb = 0
 
 elso = int(input("Kérem az első számot: "))
 masodik = int(input("Kérem a második számot: "))
 harmadik = int(input("Kérem a harmadik számot: "))
 
 if elso <= masodik:
-    kisebb = elso
+    nagyobb = elso
 else:
-    kisebb = masodik
+    nagyobb = masodik
 
-if kisebb <= harmadik:
-    legkisebb = kisebb
+if nagyobb <= harmadik:
+    legnagyobb = nagyobb
 else:
-    legkisebb = harmadik
+    legnagyobb = harmadik
 
-szovegKiir = f"A legkisebb szám: {legkisebb}"
+szovegKiir = f"A legnagyobb szám: {legnagyobb}"
 print(szovegKiir)
