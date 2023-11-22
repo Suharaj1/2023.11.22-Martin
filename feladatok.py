@@ -1,1 +1,2 @@
-print("Hello World!")
+szovegKiir = f"Hello World!"
+print(szovegKiir)
